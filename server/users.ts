@@ -30,3 +30,8 @@ export async function signInAction(data: {
     headers: await headers(),
   });
 }
+export async function signOutAction() {       
+  return await auth.api.signOut({
+    headers: await headers(),
+  });
+}
